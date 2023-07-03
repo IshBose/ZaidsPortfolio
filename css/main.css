@@ -11,13 +11,15 @@
     font-family: "Outfit", sans-serif;
     width: 100%;
     height: 100vh;
+    
     background: linear-gradient(
       to right,
-      #ffffff 0%,
-      #ffffff 50%,
+      #111111 0%,
+      #111111 50%,
       #111111 50%,
       #111111 100%
     );
+    overflow-x: hidden;
   }
 
 
@@ -26,7 +28,7 @@
     }
 
     .contrastcard{
-        background-color: #303030;
+        background-color: #111111;
         color: white;
         padding: 16px;
         border-radius: 8px;
@@ -34,9 +36,130 @@
         margin-right: 24px;
     }
 
+    .moviecard{
+        display: flex;
+        padding: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        border-radius: 8px;
+        background: #111;
+        color: white;
+        transition: .2s;
+    }
+
+
+    .moviecard:hover{
+        background-color: #343434;
+
+    }
+
+    .movielink a{
+        text-decoration: none;
+        transition: transform .25s; /* Animation */
+    }
+
+   .movielink:hover{
+         transform: scale(1.01);
+    }
+
+    
+
+
+    .cardcol{
+        width: 50%;
+        display: inline-flex;
+    }
+
+    .collage{
+        display: flex;
+    max-width: 1288px;
+   max-height: 485px;
+    align-items: flex-start;
+    gap: 24px
+    }
+
+    .poster{
+        max-height: 486px;
+        max-width: 815px;
+        flex: 1 0 0;
+    }
+
+    .moviealign{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .collagecol{
+        display: flex;
+    height: 451px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    }
+
+    .collagecol img{
+        width: 448px;
+        height: 231px;
+        flex-shrink: 0;
+    }
+
+    .moviedescription{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+    }
+
+    .title{
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    footer{
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        padding-bottom: 24px;
+        color: white;
+    }
+
+    .aboutimage img{
+        border-radius: 4px;
+        max-width: 30%;
+      justify-content: left;
+      margin: 40px;
+      display: block;
+      
+   
+    }
+
+    .aboutpage {
+        width: 50%;
+        padding: 24px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        float: right;
+        gap: 40px;
+        border-radius: 8px;
+        background: #111;
+        color: white;
+    }
+
+.cardimg img{
+    width: 750px;
+    height: 730px;
+    flex-shrink: 0;
+    }
+
     .movielist{
         margin-top: 40px;
-        padding-top: 40px
+        padding-top: 0px
     }
 
     .flexcontainer{
@@ -63,14 +186,14 @@
 #menuToggle a
 {
   text-decoration: none;
-  color: #232323;
+  color: white;
   
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: #7D7D7D;
 }
 
 
@@ -102,7 +225,7 @@
   margin-bottom: 5px;
   position: relative;
   
-  background: #ffffff;
+  background: #FFFFFF;
   border-radius: 3px;
   
   z-index: 1;
@@ -132,7 +255,7 @@
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: white;
 }
 
 /*
@@ -164,7 +287,7 @@
   padding: 50px;
   padding-top: 125px;
   
-  background: #ededed;
+  background: #111111;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -189,3 +312,5 @@
   transform: none;
 }
   
+
+
