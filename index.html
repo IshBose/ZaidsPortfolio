@@ -54,16 +54,17 @@
 
   
     <body>
+        <div class="mobilewrapper" style="overflow-x: hidden;">
         <!-- Used to add margin to the page-->
        <div class="indexcontainer">
        
         <!-- Used to highlight text on white and black background-->
         <div class="flexcontainer">
-            <div class = "contrastcard">
+            <div class = "contrastcard" style="  background-color: #343434;">
                 <h1>Zaid Hassan</h1>
             </div>
 
-            <div class = "contrastcard" style="line-height: 40px;">
+            <div class = "contrastcard" style="line-height: 40px;" id="mobilehide">
                 <p >My name is Zaid Hassan and I'm a Director based in Los Angeles currently attending USC School of Cinematic Arts studying Film Production.</p>
             </div>
 
@@ -90,7 +91,7 @@
                   but hey, it's pure CSS magic.
                   -->
                   <ul id="menu">
-                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./index.html" id="active"><li>Home</li></a>
                     <a href="./about.html"><li>About</li></a>
                     <a href="./Zaid_Hassan_Resume (3).pdf"><li>Resume</li></a>
                   </ul>
@@ -98,6 +99,10 @@
               </nav>
 
               
+        </div>
+
+        <div class="mobilebio">
+            <p>My name is Zaid Hassan and I'm a Director based in Los Angeles currently attending USC School of Cinematic Arts studying Film Production.</p>
         </div>
 
         <div class="movielist">
@@ -205,19 +210,64 @@
 
             
 
-            
+       <!--End of Movie List-->     
      </div>
+
+     <!--Mobile List-->
+
+     <div class="mobilelist">
+
+
+        <div class="mobilecard">
+            <h2>O1 SULTANA     &nbsp&nbsp&nbsp
+     USC FILM  &nbsp&nbsp&nbsp    15:01</h2>
+
+        <img src="./images/sultana.png" class="poster">          
+        <p>After a tumultuous rise to power, the first Muslim Sultana of Delhi fights to guide her kingdom while the people closest to her plot against her.
+        </p>         
+    
+                
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=yZzEiWrpDhI&ab_channel=ZaidHassan" >
+            <div class="mobilecard">
+                <h2>O2 JALAPENO BAGEL     &nbsp&nbsp&nbsp
+        USC FILM  &nbsp&nbsp&nbsp    5:01</h2>
+
+            <img src="./images/FF451C0F-F5A2-43FE-9EF1-F1705ED1053E 3.JPG" class="poster">          
+            <p> Detailing grief and understanding through the lens of a child.
+            </p>         
+        
+                    
+            </div>
+        </a>
+        
+        <a href="https://www.youtube.com/watch?v=aJHxxSbP6P4&ab_channel=ZaidHassan" >
+            <div class="mobilecard">
+                <h2>O3 ZAIDS DEAD     &nbsp&nbsp&nbsp
+        USC FILM  &nbsp&nbsp&nbsp    4:21</h2>
+
+            <img src="./images/DSC07293_Original.jpg" class="poster">          
+            <p>Detailing the human ego, and the death of conciousness.
+            </p>         
+        
+                    
+            </div>
+        </a>
+
+     </div>
+
        
 
      <footer>
         ©Zaid Hassan, 2023
-        <br>Designed and Developed by Zaid Hassan with ❤ and ☕
+        <br><br>Designed and Developed by Zaid Hassan with ❤ and ☕
      </footer>
 
        </div>
 
     
-     
+    </div>
     </body>
 
 
