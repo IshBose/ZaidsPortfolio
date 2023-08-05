@@ -367,10 +367,14 @@
 .mobilecard p{
     margin-top: 12px;
     margin-bottom: 12px;
+    text-decoration: none;
+
 }
 
 .mobilecard h2{
     margin-bottom: 16px;
+    text-decoration: none;
+
 }
 
 .socialpill{
@@ -383,6 +387,7 @@ background: #FFF;
 transition: 0.2s smooth;
 
 }
+
 
 .socialpill:hover{
     transform: scale(1.01);
@@ -490,6 +495,10 @@ gap: 24px;
   transform: translate(40%, -100%);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+a{
+  text-decoration: none;
 }
 
 
