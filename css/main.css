@@ -35,7 +35,7 @@
         padding: 16px;
         border-radius: 8px;
         display: block;
-        margin-right: 24px;
+        margin-right: 12px;
     }
 
     .moviecard{
@@ -140,12 +140,20 @@
     }
 
     footer{
-        text-align: center;
         font-weight: 600;
         font-size: 18px;
         padding-bottom: 24px;
+        padding-left: 40px;
         color: white;
+        padding-right: 40px;
+        justify-content: center;
     }
+
+
+    .spacer{
+        margin-top: 64px;
+    }
+  
 
     .aboutimage img{
         border-radius: 4px;
@@ -305,7 +313,7 @@
 {
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 -75px;
+  margin: -100px 0 0 -100px;
   padding: 50px;
   padding-top: 125px;
   
@@ -365,6 +373,83 @@
     margin-bottom: 16px;
 }
 
+.socialpill{
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 4px;
+background: #FFF;
+transition: 0.2s smooth;
+
+}
+
+.socialpill:hover{
+    transform: scale(1.01);
+}
+.socialpill a img{
+    display: flex;
+padding: 12px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 4px;
+background: #E6E6E6;
+width: 24px;
+height: 24px;
+
+
+
+    
+    
+}
+
+.socialpill a{
+    display: flex;
+padding: 12px;
+align-items: center;
+gap: 12px;
+border-radius: 4px;
+background: #FFF;
+text-decoration: none;
+font-weight: 600;
+color: black;
+
+}
+  /* Add a background color and some padding around the form */
+  .socialcontainer {
+        display: inline-flex;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        border-radius: 8px;
+        background: #303030;
+        float:center;
+        margin-bottom: 40px;
+        
+      }
+
+  .imagepill{
+    display: flex;
+align-items: flex-start;
+gap: 10px;
+border-radius: 4px;
+background: #E6E6E6;
+  }
+
+  .imagepill img{
+    width:24px;
+    height:24px;
+  }
+
+  
+  
+  .sociallist{
+    display: flex;
+align-items: flex-start;
+gap: 24px;
+  }
+
 
 
   
@@ -375,6 +460,7 @@
      
     .body{
         overflow-x: hidden;
+        text-decoration: none;
 
     }
    
@@ -391,7 +477,7 @@
 {
   position: absolute;
  
-  margin:-90px 0 0 -50px;
+  margin:-90px 0 0 -70px;
   padding: 50px;
   padding-top: 90px;
   
@@ -467,6 +553,44 @@ h2{
     padding-bottom: 0px;
     padding-top: 24px;
 }
+
+.socialcontainer {
+    display: block;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 8px;
+    background: #303030;
+    float:right;
+    margin-bottom: 24px;
+    
+  }
+
+  .sociallist{
+    display: block;
+    gap: 12px;
+  }
+
+  .socialpill{
+    margin-top: 12px;
+  }
+
+  .socialpill a{
+    display: flex;
+padding: 4px;
+align-items: center;
+gap: 12px;
+border-radius: 4px;
+background: #FFF;
+text-decoration: none;
+font-weight: 600;
+color: black;
+
+}
+
+
+  
 
 
 }
